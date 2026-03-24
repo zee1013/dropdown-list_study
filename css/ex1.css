@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul, li{
+    list-style: none;
+}
+/* 전체 영역 */
+.wrap{
+    width: 1200px;
+}
+/* 헤더 */
+.header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+/* 로고 */
+.logo{
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: skyblue;
+}
+/* 네비게이션 */
+.gnb{
+    position: absolute;
+    /* top: 40px; */
+    bottom: 0;
+    right: 30px;
+    background-color: aliceblue;
+}
+/* 메인메뉴 */
+.main-menu{
+    width: 600px;
+    display: flex;
+    text-align: center;
+}
+.main-menu>li{
+    position: relative;
+    width: calc(100% /4);
+}
+.main-menu>li>a{
+    padding: 10px;
+    display: block;
+    background-color: palevioletred;
+}
+/* 서브메뉴 */
+.sub-menu{
+    width: 100%;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.sub-menu>li>a{
+    display: block;
+    padding: 10px;
+    /* background-color: pink; */
+}
+/* 헤더 전체 배경 */
+.submenu-bg{
+    position: absolute;
+    top: 42px;
+    left: -570px;
+    width: 1200px;
+    height: 200px;
+    background-color: pink;
+    opacity: 50%;
+    display: none;
+}
+/* 네비게이션 호버 */
+.main-menu>li:hover >a{
+    color: #fff;
+    background-color: rgb(187, 72, 91);
+}
+/* .main-menu>li:hover .sub-menu{
+    display: block;
+} */
+.main-menu:hover .sub-menu , .main-menu:hover + .submenu-bg{
+    display: block;
+}
+.sub-menu>li:hover> a{
+    color: #fff;
+    background-color: rgb(255, 152, 169);
+}
+/* 이미지 슬라이드 */
+.img-slid{
+    width: 100%;
+    height: 300px;
+    background-color: lemonchiffon;
+}
+.img-slid img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 인포 전체 */
+.info-wrap{
+    width: 100%;
+    height: 200px;
+    background-color: paleturquoise;
+}
+.info-box{
+    display: flex;
+    text-align: center;
+    line-height: 200px;
+}
+.info-box li{
+    width: calc(100% /3);
+}
+.info-box li:nth-child(2){
+    background-color: honeydew;
+}
+/* 푸터 */
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(226, 238, 255);
+}
+.footer-logo{
+    width: 200px;
+    background-color: skyblue;
+}
+.copyright{
+    width: 800px;
+}
+.sns{
+    width: 200px;
+    background-color: rgb(189, 212, 255);
+}

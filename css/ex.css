@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul, li{
+    list-style: none;
+}
+/* 전체 메뉴 */
+.gnb{
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: beige;
+}
+/* 메인 메뉴 */
+.main-menu{
+    width: 400px;
+    display: flex;
+    margin-left: auto;
+}
+.main-menu>li{
+    width: calc(100% / 4);
+    text-align: center;
+    position: relative;
+}
+.main-menu>li>a{
+    display: block;
+    padding: 15px 0;
+    background-color: cadetblue;
+}
+/* 서브메뉴 */
+.sub{
+    width: 100%;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    display: none;
+}
+.sub>li>a{
+    display: block;
+    padding: 10px 0;
+    background-color: palegoldenrod;
+}
+/* 호버 */
+.main-menu>li:hover .sub{
+    display: block;
+}
+.main-menu>li:hover >a{
+    background-color: aquamarine;
+}
